@@ -42,4 +42,8 @@ public class Calculator {
         return sum;
     }
 
+    public double meanOfArray(int[] arr) {
+        return sumOfArray(arr) / (double) arr.length;
+    }
+
 }

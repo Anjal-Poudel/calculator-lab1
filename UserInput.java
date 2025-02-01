@@ -11,4 +11,12 @@ public class UserInput {
         System.out.print(message);
         return scanner.nextInt();
     }
+
+    public int[] getTwoNumbers() {
+        System.out.print("Enter first number: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter second number: ");
+        int num2 = scanner.nextInt();
+        return new int[]{num1, num2};
+    }
 }

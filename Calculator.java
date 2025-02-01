@@ -46,4 +46,13 @@ public class Calculator {
         return sumOfArray(arr) / (double) arr.length;
     }
 
+    public double varianceOfArray(int[] arr) {
+        double mean = meanOfArray(arr);
+        double sumSquaredDiffs = 0;
+        for (int num : arr) {
+            sumSquaredDiffs += Math.pow(num - mean, 2);
+        }
+        return sumSquaredDiffs / arr.length;
+    }
+
 }

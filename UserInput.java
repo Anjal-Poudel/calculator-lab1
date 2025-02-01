@@ -6,5 +6,9 @@ public class UserInput {
     public UserInput(Scanner scanner) {
         this.scanner = scanner;
     }
-    
+
+    public int getIntInput(String message) {
+        System.out.print(message);
+        return scanner.nextInt();
+    }
 }
